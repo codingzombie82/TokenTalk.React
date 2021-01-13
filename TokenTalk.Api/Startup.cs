@@ -79,6 +79,8 @@ namespace TokenTalk.Api
 
             app.UseAuthorization();
 
+            app.UseCors(); //임시로 넣음
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
