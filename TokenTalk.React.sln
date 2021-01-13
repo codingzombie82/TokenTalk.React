@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenTalk.React", "TokenTal
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TokenTalk.SqlServer", "TokenTalk.SqlServer\TokenTalk.SqlServer.sqlproj", "{BED43AA8-C176-4681-A935-A9BAC9392F43}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokenTalk.Models", "TokenTalk.Models\TokenTalk.Models.csproj", "{E733BAD1-D772-4907-A90D-3D926F70648F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{BED43AA8-C176-4681-A935-A9BAC9392F43}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BED43AA8-C176-4681-A935-A9BAC9392F43}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BED43AA8-C176-4681-A935-A9BAC9392F43}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E733BAD1-D772-4907-A90D-3D926F70648F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E733BAD1-D772-4907-A90D-3D926F70648F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E733BAD1-D772-4907-A90D-3D926F70648F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E733BAD1-D772-4907-A90D-3D926F70648F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
