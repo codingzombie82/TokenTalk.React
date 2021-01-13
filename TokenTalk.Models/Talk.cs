@@ -22,7 +22,7 @@ namespace TokenTalk.Models
         /// 
         [MaxLength(255)]
         [Required(ErrorMessage = "필수 입력사항 입니다.")]
-        [Display(Name = "글 제목"]
+        [Display(Name = "글 제목")]
         [Column(TypeName = "NVarChar(255)")]
         public string Title { get; set; }
     
