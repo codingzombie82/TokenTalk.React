@@ -32,6 +32,11 @@ namespace TokenTalk.Models
         /// 
         [Display(Name ="내용")]
         public string Description { get; set; }
+
+        /// <summary>
+        /// 등록일
+        /// </summary>
+        public DateTime Created { get; set; }
     }
 
     [Table("Talks")]
