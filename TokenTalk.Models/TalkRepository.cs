@@ -73,7 +73,6 @@ namespace TokenTalk.Models
             return await _context.Talks.OrderByDescending(m => m.Id)
                 .ToListAsync();
         }
-
         #endregion
 
         #region 상세보기
@@ -98,7 +97,12 @@ namespace TokenTalk.Models
             }
 
             return false;
-        } 
+        }
+
+        //Task<ArticleSet<Talk, int>> ICrudRepositoryBase<Talk, int>.GetArticlesAsync<TParentIdentifier>(int pageIndex, int pageSize, string searchField, string searchQuery, string sortOrder, TParentIdentifier parentIdentifier)
+        //{
+        //    throw new NotImplementedException();
+        //}
         #endregion
     }
 }
