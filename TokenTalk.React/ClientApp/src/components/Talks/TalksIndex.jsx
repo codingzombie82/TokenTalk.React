@@ -48,16 +48,22 @@ export class TalksIndex extends Component {
         );
     }
     createPage() {
-        console.log('goCreatePage');
+        //console.log('goCreatePage');
+        const { history } = this.props;
+        history.push('/Talks/Create');
     }
 
     editBy(id) {
-        console.log('editBy' + id);
+        //console.log('editBy' + id);
+        const { history } = this.props;
+        history.push('/Talks/Edit/'+id);
 
     }
 
     deleteBy(id) {
-        console.log('deleteBy' + id);
+        //console.log('deleteBy' + id);
+        const { history } = this.props;
+        history.push('/Talks/Delete/' + id);
 
     }
 
