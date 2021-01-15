@@ -11,14 +11,14 @@ export class TalksCreate extends Component {
             created : null
         };
         this.handleChangeTitle = this.handleChangeTitle.bind(this);
-        this.handleChangeDescription = this.handleChangeDescription.bind(this);
+        //this.handleChangeDescription = this.handleChangeDescription.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.goIndex = this.goIndex.bind(this);
     }
     componentDidMount() {
         
     }
-    handleChangeDescription(e){
+    handleChangeDescription = (e) => {
         this.setState({
             description: e.target.value
         });
