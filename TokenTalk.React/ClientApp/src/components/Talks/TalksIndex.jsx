@@ -1,5 +1,5 @@
 ﻿import React, { Component } from 'react';
-
+import axios from 'axios';
 export class TalksIndex extends Component {
 
     constructor(props) {
@@ -11,7 +11,7 @@ export class TalksIndex extends Component {
         };
     }
     componentDidMount() {
-        this.populateWeatherData();
+        this.populateTalkData();
     }
 
     static renderTalksTable(talks) {
@@ -53,11 +53,25 @@ export class TalksIndex extends Component {
             </div>
         );
     }
+    // FETCH
+    //async populateTalkData() {
+    //    const response = await fetch('/api/Talks');
+    //    const data = await response.json();
+    //    this.setState({ Talks: data, loading: false });
+    //}
 
-    async populateWeatherData() {
-        const response = await fetch('/api/Talks');
-        const data = await response.json();
-        console.log(data);
+    // AXIOS
+    //populateTalkData() {
+    //    axios.get('/api/Talks').then(response => {
+    //        const data = response.data;
+    //        this.setState({ Talks: data, loading: false });
+    //    });
+    //}
+
+    // async AXIOS
+    async populateTalkData() {
+        const response = await axios.get('/api/Talks');
+        const data = response.data;
         this.setState({ Talks: data, loading: false });
     }
 }
